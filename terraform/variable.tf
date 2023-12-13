@@ -16,19 +16,19 @@ variable "key_name" {
 variable "instance_type" {
   description = "Instance type for EMR and EC2"
   type        = string
-  default     = "m4.xlarge"
+  default     = "t2.micro"
 }
 
 ## Alert email receiver
 variable "alert_email_id" {
   description = "Email id to send alerts to "
   type        = string
-  default     = "you-name@some-domain.com"
+  default     = "marcelolandivar24@gmail.com"
 }
 
 ## Your repository url
 variable "repo_url" {
   description = "Repository url to clone into production machine"
   type        = string
-  default     = "https://github.com/josephmachado/data_engineering_project_template.git"
+  default     = "https://github.com/marcelolandivar/data_engineering_project_template.git"
 }
